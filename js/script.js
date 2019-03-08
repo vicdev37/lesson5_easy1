@@ -1,13 +1,12 @@
 let ul = document.querySelector('.menu'),
-    column = document.getElementById('column'),
+    column = document.querySelectorAll('.column'),
     adv = document.querySelector('.adv');
-    three = document.getElementById('three'),
-    two = document.getElementById('two'),
     title = document.getElementById('title'),
-    answer = document.getElementById('prompt');
+    answer = document.getElementById('prompt'),
+    menuItem = document.querySelectorAll('.menu-item');
     
 
-
+console.log(column)
 
 let li = document.createElement('li'),
     // text = document.createTextNode('Мы продаем только подлинную технику Apple');
@@ -22,14 +21,14 @@ ul.appendChild(li);
 
 
 
-column.removeChild(adv);
+column[1].removeChild(adv);
 
 text.classList.add('title');
 
-ul.insertBefore(two, three);
+ul.insertBefore(menuItem[2], menuItem[1]);
 
 document.body.style.background = 'url(../img/apple_true.jpg)';
-column.replaceChild(text, title);
+column[1].replaceChild(text, title);
 text.innerHTML = 'Мы продаем только подлинную технику Apple';
 
 for (let i = 0; i < 1; i++) {
