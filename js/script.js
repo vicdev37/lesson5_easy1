@@ -6,7 +6,7 @@ let ul = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu-item');
     
 
-console.log(column)
+console.log(column);
 
 let li = document.createElement('li'),
     // text = document.createTextNode('Мы продаем только подлинную технику Apple');
