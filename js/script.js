@@ -27,7 +27,7 @@ text.classList.add('title');
 
 ul.insertBefore(menuItem[2], menuItem[1]);
 
-document.body.style.background = 'url(../img/apple_true.jpg) center no-repeat';
+document.body.style.background = 'url(img/apple_true.jpg) center no-repeat';
 // column[1].replaceChild(text, title);
 title.textContent = 'Мы продаем только подлинную технику Apple';
 
